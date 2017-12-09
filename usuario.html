@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" ng-app = "smallprintjob">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Usuario</title>
+
+
+        <!-- Incluir Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        
+        <!-- Incluir AngularJS -->
+        <script src="js/lib/angular.min.js"></script>
+
+        <!-- Incluir controllers -->
+        <script src="js/appUsuario.js"></script>
+
+    </head>    
+    <body>
+
+        <div class="container" ng-controller = "usuarioCtrl as user">
+            
+            Alias:
+            <input type="text" class="form-control" ng-model=" usuario.aliasUser"></input>
+
+            Nombre:
+            <input type="text" class="form-control" ng-model=" usuario.nombreUser "></input>
+           
+            Apellidos:
+            <input type="text" class="form-control" ng-model=" usuario.apellidosUser"></input>
+
+            Fecha nacimiento:
+            <input type="text" class="form-control" ng-model=" usuario.fechaNacimientoUser"></input>
+
+            Genero;
+            <input type="text" class="form-control" ng-model=" usuario.generoUser "></input>
+
+            Título superor:
+            <input type="text" class="form-control" ng-model=" usuario.tituloSupUser "></input>
+
+            Password:
+            <input type="password" class="form-control" ng-model=" usuario.passwordUser "></input>
+
+            Verificar password:
+            <input type="password" class="form-control" ng-model=" usuario.password2User "></input>
+
+            Mail:
+            <input type="text" class="form-control" ng-model=" usuario.mailUser"></input>
+
+
+            <br>
+            <button class ="btn btn-primary" ng_click="guardarUsuario()">Guardar</button>
+            <button class ="btn btn-danger" ng_click="cancelarUsuario()">Cancelar</button>
+
+        </div>
+
+    </body>
+</html>

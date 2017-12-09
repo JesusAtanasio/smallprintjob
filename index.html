@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es" ng-app = "smallprintjob">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Página inicial</title>
+
+        <!-- Incluir Bootstrap -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        <!-- Incluir css platilla base -->
+        <link rel="stylesheet" href="css/plantilla/plantilla.css">
+
+    </head>    
+    <body>
+
+		<header id="main-header">
+
+			<div id ="cabeceraPrin">
+				<a id="logo-header" href="#">
+     				<img src="./img/logo/SPJ_0.0.0.png" alt="SMJ_logo" height="50" width="80">
+     			</a>
+     		
+	     		<div id="logo-header">		
+	     			<a href="#" class="site-name">SmallPrintJob</a>
+	     			
+					<a  href="#" class="site-desc">Lo que no se cuenta en una entrevista</a>
+	     			 <!-- / #logo-header -->
+		 		</div>
+	     		<div class="botones-cabecera">
+		     		<button type="button" class="btn btn-primary btn-lg">Success</button>
+		     		<button type="button" class="btn btn-primary btn-lg">Info</button>
+	 			</div>
+			</div>
+
+			
+			<span class ="cabeceraSec">	
+				<nav class="cabeceraSec">
+					<ul>
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Acerca de</a></li>
+						<li><a href="#">Contacto</a></li>
+						<li><a href="#">Dona!!</a></li>
+					</ul>
+				</nav><!-- / nav -->
+			</span>	
+			
+	 	</header>
+
+	 	<div id="publicidad">
+
+				<h2>Publicidad</h2>
+				
+
+		</div>
+
+	 	<div id="cuerpoPagina">
+			<section id="busqueda">
+				<header>
+					<div >
+						<div id="campoBusqueda">	
+							<input type="text" class="form-control input-lg" placeholder="Busca por empresa" ng-model="BusquedaEmpresa"/>
+						</div>
+						<div id="campoLocalidad">
+							<div class="btn-group">
+					  			<button type="button" class="btn btn-default dropdown-toggle input-lg" data-toggle="dropdown">Localidad<span class="caret"></span>
+					  			</button>
+					 
+					  			<ul class="dropdown-menu" role="menu">
+							  	  <li><a href="#">Madrid</a></li>
+							  	  <li><a href="#">Ponferrada</a></li>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<button type="button" id="botonBuscar" class="btn btn-primary btn-lg">Buscar</button>
+						</div>
+						
+					</div>
+				</header>
+			</section>
+			<section id="alerta">
+				    <article >
+						<h2>Alertas empresas/proyectos</h2>
+						
+				    </article>
+				
+			</section>
+			<section id="cuadro-empresa-dia">
+				
+				    <article >
+							
+						<h2>Empresa del día</h2>
+							
+				    </article>
+			</section>
+
+				<section id="peor-empresa">
+					    <article >
+							<h2>Peores empresas de este mes</h2>
+							<p> </p>
+					    </article>
+				</section>
+				<section id="mejor-empresa">
+					    <article >
+							<h2>Mejores empresas de este mes</h2>
+							<p> </p>
+					    </article>
+				</section>
+
+
+		</div>	
+		
+
+
+		<footer id="main-footer">
+		<nav>
+		  <ul>
+		    <li><a href="cursohtml.html">Curso de Html5</a></li>
+		    <li><a href="cursocss.html">Curso de CSS</a></li>
+		    <li><a href="cursojavascript.html">Curso de Javascript</a></li>
+		  </ul>
+		</nav>
+		</footer> <!-- / #main-footer -->
+    </body>
+</html>

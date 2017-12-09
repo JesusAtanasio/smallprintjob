@@ -1,0 +1,272 @@
+
+/*!
+ * CSS de la plantilla base
+ * Versión 0.0.1
+ */
+/*! header */
+
+* { margin: 0; padding: 0; }
+
+#main-header {
+	background: #333;
+	color: white;
+	height: 120px;
+	width: 100%; /* fijador de cabecera principal*/ /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+ }
+ 
+	#main-header a {color: white;}
+ 
+#cabeceraPrin {
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed;
+	padding: 15px 20px 20px 15px;
+ }
+ 
+	#cabeceraPrin .botones-cabecera {
+		display: block;
+		float: right;
+		padding: 15px 20px 20px 15px;
+	 }
+ 
+/*
+* Logo
+*/
+#logo-header {
+	float: left;
+	padding: 15px 20px 20px 15px;
+	text-decoration: none;
+ }
+ 
+	#logo-header:hover {color: #0b76a6;}
+ 
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.4em;
+		padding-top: 2px;
+	 }
+ 
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 600;
+		font-size: 1.1em;
+		padding-top: 5px;
+		color: #999;
+	 }
+ 
+#main-header .cabeceraSec {
+	padding-top: 30px;
+	display: block;
+	text-align: center;
+	width: 120%;
+	font-weight: 600;
+	font-size: 1.1em;
+ }
+ 
+/*
+	 * Navegación
+	 */
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-right: 20px;
+ }
+ 
+	nav ul li {
+		display: inline-block;
+		line-height: 80px;
+	 }
+ 
+		nav ul li a {
+			display: block;
+			padding: 0 10px;
+			text-decoration: none;
+		 }
+ 
+			nav ul li a:hover {background: #0b76a6;}
+ 
+/*! Fin header */
+
+/*! Body */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2aa;
+	font-size: 1em;
+	line-height: 1.5em;
+	padding-top: 120px; /* Relleno superior igual a la altura de la cabecera*/
+ }
+ 
+#busqueda {
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 10px 0px;
+	height: 50px;
+ }
+
+#campoBusqueda {
+	min-height: 30px;
+	padding-left: 0px;
+	width: 50%;
+	float: left;
+ }
+ 
+#campoLocalidad {
+	min-height: 30px;
+	padding-left: 25px;
+	width: 30%;
+	float: left;
+ }
+ 
+#botonBuscar {
+	min-height: 20px;
+	padding-right: 15px;
+	padding-left: 25px;
+	width: 15%;
+	float: right;
+ }
+ 
+#main-content {
+	background: white;
+	width: 90%;
+	max-width: 800px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+ }
+ 
+	#main-content header,
+	#main-content .content {padding: 40px;}
+ 
+#btn-group-per {
+	display: inline-block;
+	vertical-align: middle;
+ }
+ 
+#cuerpoPagina {
+	margin: 0px 20% 0% 5% ;
+	padding: 15px 2% 5% 2%;
+	height: 750px;
+	background-color:green;}
+
+#cuerpoPagina section{
+	
+	margin: 20px 0% 0px 0% ;
+	}
+
+#cuadro-empresa-dia{
+	 border: 1px solid #1E679A; 
+	 border-radius: 15px;
+    width: 83%;
+    height: 250px;  
+    margin:100px 20px 0px 0px;
+ 
+   background-color: #1E679A; 
+   font-weight: bold; 
+   color: #ffffff; 
+    
+ 
+   padding: 10px 4px 4px 4px; 
+   background-color: #C6D3E2; 
+
+}
+
+#peor-empresa{
+	float:right;
+	margin-right: 2% !important;
+	border: 1px solid #1E679A; 
+	border-radius: 15px;
+	width: 40%;
+	height: 250px;
+ 
+    
+   font-weight: bold; 
+   color: #ffffff;  
+ 
+   padding: 4px 4px 4px 4px; 
+   background-color: #C6D3E2; 
+
+}
+#mejor-empresa{
+	 border: 1px solid #1E679A;
+	 border-radius: 15px; 
+   width: 40%;
+   height: 250px;
+ 
+   font-weight: bold; 
+   color: #ffffff; 
+ 
+   padding: 4px 4px 4px 4px; 
+   background-color: #C6D3E2; 
+
+}
+#alerta{
+	float:right;
+	 border: 1px solid #1E679A;
+	 border-radius: 15px;
+   width: 15%; 
+   height: 600px;
+ 
+   background-color: #1E679A; 
+   font-weight: bold; 
+   color: #ffffff; 
+ 
+   
+   background-color: #C6D3E2; 
+
+}
+#publicidad{
+	float:right;
+	 border: 1px solid #1E679A;
+	 border-radius: 15px;
+   width: 15%;
+   height: 720px;2
+ 
+   font-weight: bold; 
+   color: #ffffff; 
+ 
+   padding: 4px 4px 4px 4px; 
+   background-color: #C6D3E2;
+   	margin: 30px 2% 0% 1% ;
+
+	background-color:blue; 
+
+}
+ 
+/*! Fin body */
+
+/*! Pie página */
+#main-footer {
+	background: #333;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+ }
+ 
+/*! Fin Pie página */
+
+/*! Estilos generales */
+h1 {
+	font-size: 2.3em;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+ }
+ 
+p {margin: 0 0 1.5em 0;}
+ 
+img {
+	max-width: 100%;
+	height: auto;
+ }
+ 
+ 
+/*! Estilos generales */

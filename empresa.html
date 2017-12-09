@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es" ng-app = "smallprintjob">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Empresa</title>
+
+
+        <!-- Incluir Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        
+        <!-- Incluir AngularJS -->
+        <script src="js/lib/angular.min.js"></script>
+
+        <!-- Incluir controllers -->
+        <script src="js/appEmpresa.js"></script>
+
+    </head>    
+    <body>
+
+        <div class="container" ng-controller = "empresaCtrl as emp">
+            
+            <h1> {{emp.empresa.nombreEmpresa}} </h1>
+
+            <h4>{{ emp.empresa.sectorEmpresa }}</h4>
+            <hr>
+
+            {{ emp.empresa.direccionEmpresa }}
+            <br>
+            {{ emp.empresa.localidadEmpresa }}
+            <br>
+            {{ emp.empresa.provinciaEmpresa }}
+            <br>
+            {{ emp.empresa.paisEmpresa }}
+            <br>
+            {{ emp.empresa.cod_postalEmpresa }}
+            <br>
+            {{ emp.empresa.sedeEmpresa }}
+            <br>
+            {{ emp.empresa.webEmpresa }}
+            <br>
+
+        </div>
+
+    </body>
+</html>
